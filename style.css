@@ -59,6 +59,7 @@ i {
 header {
     background: linear-gradient(to right, #9B3235 7%, #000000 65%);
     color: #fff;
+    padding: 0 15px;
 }
 .container-header-movie {
     display: flex;
@@ -78,6 +79,10 @@ header {
 }
 .all-text-movie .text-movie .recap-movie {
     margin-bottom: 1.8rem;
+}
+.all-text-movie .text-movie .recap-movie span:not(:last-child)::after {
+    content: "\2022";
+    margin-left: 3px;
 }
 .action-movie .watch-movie {
     text-decoration: none;
@@ -175,4 +180,8 @@ main .navbar-movie ul li a:hover::after {
     .cover-img-movie {
         display: none;
     }
+}
+
+@media (max-width: 768px) {
+
 }
