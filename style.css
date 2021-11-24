@@ -1,3 +1,165 @@
+/* ====== GENERAL ====== */
+/* ====== GENERAL ====== */
+/* ====== GENERAL ====== */
+/* import font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
 * {
     box-sizing: border-box;
+    margin: 0;
+}
+body {
+    font-family: 'Roboto', sans-serif ;
+    color: #fff;
+}
+a {
+    text-decoration: none;
+}
+i {
+    cursor: pointer;
+}
+
+#eee {
+    color: #A63740
+    #1D2126
+    #21252A
+    #9B3235;
+}
+
+/* ====== POP-UP ====== */
+/* ====== POP-UP ====== */
+/* ====== POP-UP ====== */
+#popup {
+    background-color: #A63740;
+    height: 65px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+#popup p {
+    flex: 1;
+    text-align: center;
+    margin-bottom: 0;
+    font-weight: 500;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+}
+#popup .btnClose {
+    cursor: pointer;
+    font-size: 40px;
+}
+
+
+
+/* ====== HEADER ====== */
+/* ====== HEADER ====== */
+/* ====== HEADER ====== */
+header {
+    background: linear-gradient(to right, #9B3235, #000000);
+    color: #fff;
+}
+.container-header-movie {
+    display: flex;
+    padding: 1.5rem 2.5rem 4rem 2.5rem;
+}
+.all-text-movie {
+    margin-top: auto;
+    margin-left: 2rem;
+}
+.all-text-movie .text-movie h1 {
+    font-size: 40px;
+    font-weight: 300;
+    margin-bottom: 2rem;
+}
+.all-text-movie .text-movie .recap-movie {
+    margin-bottom: 1.8rem;
+}
+.action-movie .watch-movie {
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+}
+.action-movie .watch-movie i:first-child {
+    font-size: 50px;
+}
+.action-movie .watch-movie i:last-child {
+    font-size: 30px;
+}
+.action-movie .watch-movie a {
+    font-size: 18px;
+    text-transform: uppercase;
+    margin: 0 2rem 0 1rem;
+    color: #fff;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+.action-movie .action-more-movie {
+    cursor: pointer;
+}
+.cover-img-movie {
+    background-image: url('img/handmaids_main-1280x720-1.jpg');
+    background-repeat: no-repeat;
+    background-position: right;
+    width: 100%;
+    opacity: 0.4;
+}
+
+
+
+/* ====== MAIN SECTION ====== */
+/* ====== MAIN SECTION ====== */
+/* ====== MAIN SECTION ====== */
+
+/* NAV */
+main {
+    background-color: #21252A;
+}
+main .navbar-movie {
+    padding-top: 2rem;
+    margin-bottom: 4rem;
+}
+main .navbar-movie ul {
+    display: flex;
+    flex-direction: row;
+}
+main .navbar-movie ul li {
+    list-style-type: none;
+    text-transform: uppercase;
+}
+main .navbar-movie ul li:not(:first-child) {
+    margin-left: 2.5rem;
+}
+main .navbar-movie ul li a {
+    color: rgb(148, 148, 148);
+    position: relative;
+    display: block;
+}
+main .navbar-movie ul li a:after {
+    position: absolute;
+    bottom: -20px;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 0%;
+    content: '.';
+    color: transparent;
+    background: #fff;
+    height: 3px;
+    transition: all .5s;
+}
+main .navbar-movie ul li a:hover {
+    color: #fff;
+}
+main .navbar-movie ul li a:hover::after {
+    width: 100%;
+}
+
+/* PROPAL MOVIE */
+.propal-movies img {
+    width: 100%;
+}
+.propal-one-movie p {
+    font-size: 20px;
+    color: #fff;
 }
